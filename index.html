@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARAGE PRO — Автосервис</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+        }
+
+        header {
+            padding: 24px 8%;
+            border-bottom: 1px solid #374151;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #fbbf24;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 70px 24px;
+        }
+
+        .label {
+            color: #fbbf24;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 1.15;
+        }
+
+        p {
+            color: #d1d5db;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 24px;
+            background: #fbbf24;
+            color: #111827;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+/* Главный экран: текст слева, фотография справа */
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #374151;
+    box-shadow: 0 20px 50px #00000040;
+}
+
+/* На телефоне располагаем блоки вертикально */
+@media (max-width: 700px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .hero-image {
+        height: 240px;
+    }
+}
+
+ .services {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(200px, 1fr)
+            );
+            gap: 18px;
+            margin-top: 55px;
+        }
+
+        .service {
+            background: #1f2937;
+            padding: 24px;
+            border-radius: 10px;
+            border: 1px solid #374151;
+        }
+
+        .service h3 {
+            color: #fbbf24;
+        }
+
+        footer {
+            padding: 24px;
+            text-align: center;
+            border-top: 1px solid #374151;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            main {
+                padding-top: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>GARAGE PRO</h2>
+    </header>
+
+    <main>
+       
+
+        <section class="hero">
+    <div>
+        <p class="label">Надёжный автосервис</p>
+
+        <h1>Твой автомобиль<br>в надёжных руках</h1>
+
+        <p>
+            Диагностика, ремонт и обслуживание автомобилей.
+            Качественная работа и честный подход к каждому клиенту.
+        </p>
+
+        <a class="button" href="https://t.me/Naymkaa0" target="_blank" rel="noopener noreferrer"></a>
+            Связаться с нами
+        </a>
+    </div>
+
+    <img
+        class="hero-image"
+        src="garage.jpg"
+        alt="Автомобиль в автосервисе"
+    >
+</section>
+
+        <section class="services">
+            <div class="service">
+                <h3>Ремонт</h3>
+                <p>Поиск и устранение неисправностей автомобиля.</p>
+            </div>
+
+            <div class="service">
+                <h3>Диагностика</h3>
+                <p>Проверка состояния и выявление проблем.</p>
+            </div>
+
+            <div class="service">
+                <h3>Обслуживание</h3>
+                <p>Замена масла и расходных материалов.</p>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Наши контакты</h2>
+            <p>
+    Телефон:
+    <a href="tel:+380000000000">Позвонить нам</a>
+</p>
+
+<p>
+    Telegram:
+    <a href="https://t.me/ТВОЙ_USERNAME" target="_blank"
+       rel="noopener noreferrer">Написать нам</a>
+</p>
+
+<p>Адрес: добавим адрес автосервиса</p>
+        </section>
+    </main>
+
+    <footer>
+        GARAGE PRO — демонстрационный проект
+    </footer>
+</body>
+</html>
